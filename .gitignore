@@ -1,0 +1,21 @@
+# Ignore Python virtual environments
+venv/
+env/
+.venv/
+.env/
+stenv/
+envst/
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# IDE and system files
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets or environment config
+.env
+*.log
