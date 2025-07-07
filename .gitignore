@@ -19,3 +19,4 @@ __pycache__/
 # Secrets or environment config
 .env
 *.log
+.streamlit/secrets.toml
