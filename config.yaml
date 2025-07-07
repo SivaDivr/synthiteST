@@ -1,9 +1,9 @@
 credentials:
   usernames:
-    siva:
+    synthiteqa:
       email: siva@datadivr.com
-      name: Siva
-      password: '$2b$12$ukp4NC3wODBqm8coXsBH3ODjDOMFk4LT.8af8DjCXZRqyXOW3zrte'  # 1234
+      name: synthiteQA
+      password: '$2b$12$ydbrBOjDQY4Wpw66j9D3VO74R1vSJ/WXcpPFxvRc/kr5n844DMyJG'
 
 cookie:
   name: pdfcompare_app
