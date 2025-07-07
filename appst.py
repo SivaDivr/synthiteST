@@ -14,10 +14,11 @@ from fpdf import FPDF
 import google.generativeai as genai
 
 st.set_page_config(page_title="PDF Comparator", layout="wide")
+st.title("Synthite AI - QA Specification & Regulation Checker")
 # Configure Gemini API
-print('key',st.secrets["GEMINI_API_KEY"])
+
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-# genai.configure(api_key="AIzaSyCyWMPTl3CFKVQDnrwdjPepNEZIIno6fOE")
+
 
 # Tokenizer
 tokenizer = AutoTokenizer.from_pretrained('google/mt5-base')
@@ -191,7 +192,7 @@ def main():
         st.sidebar.write(f"Logged in as: {st.session_state['username']}")
         # st.write("Main app content here...")
 
-        st.title("Synthite AI - QA Specification & Regulation Checker")
+        # st.title("Synthite AI - QA Specification & Regulation Checker")
 
         req_file = st.file_uploader("📥 Upload Requirement Sheet PDF", type="pdf")
         pis_file = st.file_uploader("📥 Upload PIS ", type="pdf")
