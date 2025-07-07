@@ -3,7 +3,8 @@
 import fitz
 import streamlit as st
 
-# from pdf2image import convert_from_bytes
+from pdf2image import convert_from_bytes
+
 from PIL import Image
 import pytesseract
 import re
