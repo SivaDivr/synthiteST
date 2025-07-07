@@ -1,0 +1,15 @@
+credentials:
+  usernames:
+    siva:
+      email: siva@datadivr.com
+      name: Siva
+      password: '$2b$12$ukp4NC3wODBqm8coXsBH3ODjDOMFk4LT.8af8DjCXZRqyXOW3zrte'  # 1234
+
+cookie:
+  name: pdfcompare_app
+  key: some_super_secret_key
+  expiry_days: 30
+
+preauthorized:
+  emails:
+    - jane@example.com
