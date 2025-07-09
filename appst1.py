@@ -78,7 +78,7 @@ Compare the following two technical documents as a Quality analyst:
 {pis_text}
 Make sure the output includes the table under the heading:
 
-**Detailed parameter Comparison**
+**Detailed Parameter Comparison**
 
 Follow this exact title formatting (including capitalization and bold) so that downstream processing tools can detect and extract this section reliably.
 
