@@ -104,3 +104,4 @@ typing_extensions==4.14.1
 tzdata==2025.2
 uritemplate==4.2.0
 urllib3==2.5.0
+reportlab==4.4.2
