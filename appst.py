@@ -138,6 +138,13 @@ Compare the following two technical documents as a Quality analyst:
 --- PIS Sheet ---
 {pis_text}
 
+Make sure the output includes the table under the heading:
+
+**Detailed Parameter Comparison**
+
+Follow this exact title formatting (including capitalization and bold) so that downstream processing tools can detect and extract this section reliably.
+
+
 Instructions:
 1. List every field from requirement sheet (req_text) in the output table without fail no matter how much the table length.
 2. List all parameters that match exactly (value and meaning).
