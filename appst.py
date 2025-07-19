@@ -22,7 +22,7 @@ from transformers import AutoTokenizer
 import google.generativeai as genai
 
 st.set_page_config(page_title="Synthite AI", layout="wide")
-# st.set_page_config(page_title="Synthite AI", layout="centered")
+
 
 # Hide all Streamlit default UI elements (header, menu, footer, profile icons)
 hide_streamlit_style = """
