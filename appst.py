@@ -21,17 +21,19 @@ import io
 from transformers import AutoTokenizer
 import google.generativeai as genai
 
-st.set_page_config(page_title="PDF Comparator", layout="wide")
+st.set_page_config(page_title="Synthite AI", layout="wide")
 # st.set_page_config(page_title="Synthite AI", layout="centered")
 
-# Hide Streamlit menu and footer
+# Hide all Streamlit default UI elements (header, menu, footer, profile icons)
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    .stDeployButton {display:none;}
+    .viewerBadge_container__1QSob {display: none;}
     </style>
-    """
+"""
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.title("Synthite AI - QA Specification & Regulation Checker")
 
