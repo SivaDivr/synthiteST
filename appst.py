@@ -1,6 +1,17 @@
 
 import fitz
 import streamlit as st
+st.set_page_config(page_title="Synthite AI", layout="centered")
+
+# Hide Streamlit menu and footer
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 import pandas as pd
 from pdf2image import convert_from_bytes
 from fpdf import FPDF, XPos, YPos
