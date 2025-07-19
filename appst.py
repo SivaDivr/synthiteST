@@ -27,7 +27,7 @@ st.set_page_config(page_title="Synthite AI", layout="wide")
 # Hide all Streamlit default UI elements (header, menu, footer, profile icons)
 hide_streamlit_style = """
     <style>
-    #MainMenu {visibility: hidden;}
+    MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .stDeployButton {display:none;}
