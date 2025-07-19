@@ -21,46 +21,46 @@ import io
 from transformers import AutoTokenizer
 import google.generativeai as genai
 
-# st.set_page_config(page_title="Synthite AI", layout="wide")
+st.set_page_config(page_title="Synthite AI", layout="wide")
 
 
-# # Hide all Streamlit default UI elements (header, menu, footer, profile icons)
-# hide_streamlit_style = """
-#     <style>
-#     #MainMenu {visibility: hidden;}
-#     footer {visibility: hidden;}
-#     header {visibility: hidden;}
-#     .stDeployButton {display:none;}
-#     .viewerBadge_container__1QSob {display: none;}
-#     </style>
-# """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.set_page_config(page_title="Synthite AI", layout="centered")
-
-# Hide Streamlit branding, footer, menu, and profile icon
+# Hide all Streamlit default UI elements (header, menu, footer, profile icons)
 hide_streamlit_style = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-
-    /* Hide bottom right Streamlit Cloud icon and GitHub icon */
-    .viewerBadge_container__1QSob {
-        display: none !important;
-    }
-
-    /* Hide "Hosted with Streamlit" footer (Streamlit Cloud) */
-    .st-emotion-cache-zq5wmm.ezrtsby0 {
-        display: none !important;
-    }
-
-    /* Also try to hide newer style classes if above doesn't work */
-    .st-emotion-cache-1v0mbdj {
-        display: none !important;
-    }
+    .stDeployButton {display:none;}
+    .viewerBadge_container__1QSob {display: none;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# st.set_page_config(page_title="Synthite AI", layout="centered")
+
+# # Hide Streamlit branding, footer, menu, and profile icon
+# hide_streamlit_style = """
+#     <style>
+#     #MainMenu {visibility: hidden;}
+#     footer {visibility: hidden;}
+#     header {visibility: hidden;}
+
+#     /* Hide bottom right Streamlit Cloud icon and GitHub icon */
+#     .viewerBadge_container__1QSob {
+#         display: none !important;
+#     }
+
+#     /* Hide "Hosted with Streamlit" footer (Streamlit Cloud) */
+#     .st-emotion-cache-zq5wmm.ezrtsby0 {
+#         display: none !important;
+#     }
+
+#     /* Also try to hide newer style classes if above doesn't work */
+#     .st-emotion-cache-1v0mbdj {
+#         display: none !important;
+#     }
+#     </style>
+# """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.title("Synthite AI - QA Specification & Regulation Checker")
 
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
