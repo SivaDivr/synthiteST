@@ -1,0 +1,15 @@
+credentials:
+  usernames:
+    synthiteqa:
+      email: siva@datadivr.com
+      name: synthiteQA
+      password: '$2b$12$ydbrBOjDQY4Wpw66j9D3VO74R1vSJ/WXcpPFxvRc/kr5n844DMyJG'
+
+cookie:
+  name: pdfcompare_app
+  key: some_super_secret_key
+  expiry_days: 30
+
+preauthorized:
+  emails:
+    - jane@example.com
